@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Username</th>
+        <th>Password</th>
+    </thead>
+    <tbody>
+        <?php foreach($this->users as $user): ?>
+            <tr>
+                <td><?php echo $user->firstname ?></td>
+                <td><?php echo $user->lastname ?></td>
+                <td><?php echo $user->username ?></td>
+                <td><?php echo $user->password ?></td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>
